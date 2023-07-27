@@ -1,0 +1,8 @@
+prefix=/home/ros/demo_ur_ws/devel
+
+Name: opencv
+Description: Description of opencv
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/ros/demo_ur_ws/devel/lib/python3/dist-packages",
+        "/home/ros/UR5-Pick-and-Place-Simulation/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/ros/demo_ur_ws/devel/lib/python3/dist-packages",
+        "/home/ros/UR5-Pick-and-Place-Simulation/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

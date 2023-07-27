@@ -1,0 +1,8 @@
+prefix=/home/ros/demo_ur_ws/install
+
+Name: ur_driver
+Description: Description of ur_driver
+Version: 1.2.7
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: dynamic_reconfigure

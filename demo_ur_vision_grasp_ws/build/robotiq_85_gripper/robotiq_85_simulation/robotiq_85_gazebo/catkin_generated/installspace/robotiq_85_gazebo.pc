@@ -1,0 +1,8 @@
+prefix=/home/ros/demo_ur_ws/install
+
+Name: robotiq_85_gazebo
+Description: Description of robotiq_85_gazebo
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

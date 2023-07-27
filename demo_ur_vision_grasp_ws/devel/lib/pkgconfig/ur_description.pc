@@ -1,0 +1,8 @@
+prefix=/home/ros/demo_ur_ws/devel
+
+Name: ur_description
+Description: Description of ur_description
+Version: 1.2.7
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

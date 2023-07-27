@@ -1,0 +1,13 @@
+(cl:defpackage household_objects_database_msgs-msg
+  (:use )
+  (:export
+   "<DATABASEMODELPOSE>"
+   "DATABASEMODELPOSE"
+   "<DATABASEMODELPOSELIST>"
+   "DATABASEMODELPOSELIST"
+   "<DATABASERETURNCODE>"
+   "DATABASERETURNCODE"
+   "<DATABASESCAN>"
+   "DATABASESCAN"
+  ))
+

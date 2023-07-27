@@ -1,0 +1,11 @@
+# generated from genmsg/cmake/pkg-genmsg.context.in
+
+messages_str = "/home/ros/demo_ur_ws/src/gripper_breakdown_solution/gazebo_plugins/household_objects_database_msgs/msg/DatabaseModelPoseList.msg;/home/ros/demo_ur_ws/src/gripper_breakdown_solution/gazebo_plugins/household_objects_database_msgs/msg/DatabaseModelPose.msg;/home/ros/demo_ur_ws/src/gripper_breakdown_solution/gazebo_plugins/household_objects_database_msgs/msg/DatabaseReturnCode.msg;/home/ros/demo_ur_ws/src/gripper_breakdown_solution/gazebo_plugins/household_objects_database_msgs/msg/DatabaseScan.msg"
+services_str = "/home/ros/demo_ur_ws/src/gripper_breakdown_solution/gazebo_plugins/household_objects_database_msgs/srv/GetModelDescription.srv;/home/ros/demo_ur_ws/src/gripper_breakdown_solution/gazebo_plugins/household_objects_database_msgs/srv/GetModelList.srv;/home/ros/demo_ur_ws/src/gripper_breakdown_solution/gazebo_plugins/household_objects_database_msgs/srv/GetModelMesh.srv;/home/ros/demo_ur_ws/src/gripper_breakdown_solution/gazebo_plugins/household_objects_database_msgs/srv/GetModelScans.srv;/home/ros/demo_ur_ws/src/gripper_breakdown_solution/gazebo_plugins/household_objects_database_msgs/srv/SaveScan.srv;/home/ros/demo_ur_ws/src/gripper_breakdown_solution/gazebo_plugins/household_objects_database_msgs/srv/TranslateRecognitionId.srv"
+pkg_name = "household_objects_database_msgs"
+dependencies_str = "std_msgs;geometry_msgs;shape_msgs;object_recognition_msgs"
+langs = "gencpp;geneus;genlisp;gennodejs;genpy"
+dep_include_paths_str = "household_objects_database_msgs;/home/ros/demo_ur_ws/src/gripper_breakdown_solution/gazebo_plugins/household_objects_database_msgs/msg;std_msgs;/opt/ros/noetic/share/std_msgs/cmake/../msg;geometry_msgs;/opt/ros/noetic/share/geometry_msgs/cmake/../msg;shape_msgs;/opt/ros/noetic/share/shape_msgs/cmake/../msg;object_recognition_msgs;/opt/ros/noetic/share/object_recognition_msgs/cmake/../msg;actionlib_msgs;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;sensor_msgs;/opt/ros/noetic/share/sensor_msgs/cmake/../msg"
+PYTHON_EXECUTABLE = "/usr/bin/python3"
+package_has_static_sources = '' == 'TRUE'
+genmsg_check_deps_script = "/opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py"

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro"
+       name="ur5" >
+
+  <xacro:arg name="transmission_hw_interface" default="hardware_interface/PositionJointInterface"/>
+
+  <!-- common stuff -->
+  <xacro:include filename="$(find ur_description)/urdf/common.gazebo.xacro" />
+
+  <!-- 包含ur5描述文件 -->
+  <xacro:include filename="$(find ur_description)/urdf/ur5.urdf.xacro" />
+  <!-- 把robotiq85_gripper包含进来 -->
+  <xacro:include filename="$(find robotiq_85_description)/urdf/robotiq_85_gripper.urdf.xacro" />
+
+  <!-- 实现ur5 arm 宏， prefix为空，不需要给各关节名加前缀-->
+  <xacro:ur5_robot prefix="" joint_limited="false"
+    transmission_hw_interface="$(arg transmission_hw_interface)"
+  />
+  <!--实现robotiq_85_gripper宏，并将gripper装在ee_link上-->
+  <xacro:robotiq_85_gripper prefix="" parent="ee_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:robotiq_85_gripper>
+  
+  <!-- gazebo插件，防抓取调落 -->
+  <xacro:include filename="$(find ur_description)/urdf/gzplugin_grasp_fix.urdf.xacro"/>
+  <xacro:gzplugin_grasp_fix/>
+
+  <!-- 实现相机宏 -->
+  <xacro:include filename="$(find kinect_v2)/urdf/kinect_v2.urdf.xacro" />
+  <xacro:kinect_v2  parent="world">
+    <origin xyz="0.6 0.0 1.00" rpy="0.0 1.57 0.0" />
+  </xacro:kinect_v2>
+
+  <!-- 定一个world参考坐标 -->
+  <link name="world" />
+
+  <!-- 将机械臂底座与world连接 -->
+  <joint name="world_joint" type="fixed">
+    <parent link="world" />
+    <child link = "base_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+
+</robot>

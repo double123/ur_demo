@@ -1,0 +1,8 @@
+prefix=/home/ros/demo_ur_ws/devel
+
+Name: ur3_moveit_config
+Description: Description of ur3_moveit_config
+Version: 1.2.7
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/ros/demo_ur_ws/install
+
+Name: ur_bringup
+Description: Description of ur_bringup
+Version: 1.2.7
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

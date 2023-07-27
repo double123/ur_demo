@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -std=c++11 -shared -Wl,-soname,libgazebo_grasp_msgs.so -o /home/ros/demo_ur_ws/devel/lib/libgazebo_grasp_msgs.so CMakeFiles/gazebo_grasp_msgs.dir/grasp_event.pb.cc.o  -lprotobuf 

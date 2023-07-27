@@ -1,0 +1,53 @@
+
+(cl:in-package :asdf)
+
+(defsystem "manipulation_msgs-msg"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :actionlib_msgs-msg
+               :geometry_msgs-msg
+               :household_objects_database_msgs-msg
+               :sensor_msgs-msg
+               :shape_msgs-msg
+               :std_msgs-msg
+)
+  :components ((:file "_package")
+    (:file "CartesianGains" :depends-on ("_package_CartesianGains"))
+    (:file "_package_CartesianGains" :depends-on ("_package"))
+    (:file "ClusterBoundingBox" :depends-on ("_package_ClusterBoundingBox"))
+    (:file "_package_ClusterBoundingBox" :depends-on ("_package"))
+    (:file "Grasp" :depends-on ("_package_Grasp"))
+    (:file "_package_Grasp" :depends-on ("_package"))
+    (:file "GraspPlanningAction" :depends-on ("_package_GraspPlanningAction"))
+    (:file "_package_GraspPlanningAction" :depends-on ("_package"))
+    (:file "GraspPlanningActionFeedback" :depends-on ("_package_GraspPlanningActionFeedback"))
+    (:file "_package_GraspPlanningActionFeedback" :depends-on ("_package"))
+    (:file "GraspPlanningActionGoal" :depends-on ("_package_GraspPlanningActionGoal"))
+    (:file "_package_GraspPlanningActionGoal" :depends-on ("_package"))
+    (:file "GraspPlanningActionResult" :depends-on ("_package_GraspPlanningActionResult"))
+    (:file "_package_GraspPlanningActionResult" :depends-on ("_package"))
+    (:file "GraspPlanningErrorCode" :depends-on ("_package_GraspPlanningErrorCode"))
+    (:file "_package_GraspPlanningErrorCode" :depends-on ("_package"))
+    (:file "GraspPlanningFeedback" :depends-on ("_package_GraspPlanningFeedback"))
+    (:file "_package_GraspPlanningFeedback" :depends-on ("_package"))
+    (:file "GraspPlanningGoal" :depends-on ("_package_GraspPlanningGoal"))
+    (:file "_package_GraspPlanningGoal" :depends-on ("_package"))
+    (:file "GraspPlanningResult" :depends-on ("_package_GraspPlanningResult"))
+    (:file "_package_GraspPlanningResult" :depends-on ("_package"))
+    (:file "GraspResult" :depends-on ("_package_GraspResult"))
+    (:file "_package_GraspResult" :depends-on ("_package"))
+    (:file "GraspableObject" :depends-on ("_package_GraspableObject"))
+    (:file "_package_GraspableObject" :depends-on ("_package"))
+    (:file "GraspableObjectList" :depends-on ("_package_GraspableObjectList"))
+    (:file "_package_GraspableObjectList" :depends-on ("_package"))
+    (:file "GripperTranslation" :depends-on ("_package_GripperTranslation"))
+    (:file "_package_GripperTranslation" :depends-on ("_package"))
+    (:file "ManipulationPhase" :depends-on ("_package_ManipulationPhase"))
+    (:file "_package_ManipulationPhase" :depends-on ("_package"))
+    (:file "ManipulationResult" :depends-on ("_package_ManipulationResult"))
+    (:file "_package_ManipulationResult" :depends-on ("_package"))
+    (:file "PlaceLocation" :depends-on ("_package_PlaceLocation"))
+    (:file "_package_PlaceLocation" :depends-on ("_package"))
+    (:file "PlaceLocationResult" :depends-on ("_package_PlaceLocationResult"))
+    (:file "_package_PlaceLocationResult" :depends-on ("_package"))
+    (:file "SceneRegion" :depends-on ("_package_SceneRegion"))
+    (:file "_package_SceneRegion" :depends-on ("_package"))
+  ))
