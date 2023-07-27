@@ -1,0 +1,8 @@
+prefix=/home/ros/demo_ur_ws/install
+
+Name: robotiq_85_msgs
+Description: Description of robotiq_85_msgs
+Version: 0.0.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs

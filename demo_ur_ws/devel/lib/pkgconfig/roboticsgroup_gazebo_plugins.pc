@@ -1,0 +1,8 @@
+prefix=/home/ros/demo_ur_ws/devel
+
+Name: roboticsgroup_gazebo_plugins
+Description: Description of roboticsgroup_gazebo_plugins
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp gazebo_ros control_toolbox

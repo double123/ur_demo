@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ros/demo_ur_ws/devel/include/**",
+        "/home/ros/UR5-Pick-and-Place-Simulation/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/ros/UR5-Pick-and-Place-Simulation/catkin_ws/src/gazebo_ros_link_attacher/include/**",
+        "/home/ros/UR5-Pick-and-Place-Simulation/catkin_ws/src/robot/robot_state_publisher/include/**",
+        "/home/ros/UR5-Pick-and-Place-Simulation/catkin_ws/src/robot/robotiq/robotiq_gazebo/include/**",
+        "/home/ros/UR5-Pick-and-Place-Simulation/catkin_ws/src/robot/universal_robot/ur_kinematics/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

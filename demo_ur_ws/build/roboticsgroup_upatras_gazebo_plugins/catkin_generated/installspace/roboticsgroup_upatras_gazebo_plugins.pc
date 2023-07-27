@@ -1,0 +1,8 @@
+prefix=/home/ros/demo_ur_ws/install
+
+Name: roboticsgroup_upatras_gazebo_plugins
+Description: Description of roboticsgroup_upatras_gazebo_plugins
+Version: 0.2.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lroboticsgroup_upatras_gazebo_mimic_joint_plugin -lroboticsgroup_upatras_gazebo_disable_link_plugin
+Requires: control_toolbox gazebo_ros roscpp

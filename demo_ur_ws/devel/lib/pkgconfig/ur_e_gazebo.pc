@@ -1,0 +1,8 @@
+prefix=/home/ros/demo_ur_ws/devel
+
+Name: ur_e_gazebo
+Description: Description of ur_e_gazebo
+Version: 1.2.7
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

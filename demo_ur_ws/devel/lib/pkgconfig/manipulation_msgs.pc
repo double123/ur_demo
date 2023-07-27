@@ -1,0 +1,8 @@
+prefix=/home/ros/demo_ur_ws/devel
+
+Name: manipulation_msgs
+Description: Description of manipulation_msgs
+Version: 0.2.1
+Cflags: -I/home/ros/demo_ur_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_generation actionlib_msgs std_msgs geometry_msgs sensor_msgs shape_msgs household_objects_database_msgs

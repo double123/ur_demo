@@ -1,0 +1,8 @@
+prefix=/home/ros/demo_ur_ws/install
+
+Name: robotiq_85_bringup
+Description: Description of robotiq_85_bringup
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
